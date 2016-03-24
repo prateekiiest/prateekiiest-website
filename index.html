@@ -29,9 +29,15 @@
 		<td><b>IHC</b></td>
 	</tr>
 </thead>
+
 </table>
 <!-- The table for colorcode -->
+<div class = "row">
+<div class="col-md-4">
+<h4>Color Codes</h4>
 <table class = "table table-bordered" id="colorcode"></table>
+</div>
+</div>
 <script type="text/javascript" src="data.json"></script>
 <script type="text/javascript">
 var obj = JSON.parse(data);
@@ -59,6 +65,7 @@ function color(exp)
 
 }
 
+
 // var childcolors = ['#95a5a6','#3498db','#1abc9c'];
 
 
@@ -71,6 +78,18 @@ var ma;
 var ihc;
 //To get the child level. Basically to change indentation and colors, for better understandability
 var childLevel;
+
+var Levels = ["High","Moderate","Low"];
+
+for (var i = 0;i<3;i++)
+{
+	row = coltable.insertRow(i);
+	topic = row.insertCell(0);
+	ma = row.insertCell(1);
+
+	topic.innerHTML = Levels[i];
+	ma.style.backgroundColor = color(Levels[i]);
+}
 
 //Iteration of the parent element
 for (var i=0; i<(Object.keys(obj).length);i++)
