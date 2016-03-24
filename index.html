@@ -69,11 +69,13 @@ var row;
 var topic;
 var ma;
 var ihc;
+//To get the child level. Basically to change indentation and colors, for better understandability
 var childLevel;
 
 //Iteration of the parent element
 for (var i=0; i<(Object.keys(obj).length);i++)
 {
+	//Add the parent rows, The value i increments along parents, whereas, rown increments for each row
 	row = table.insertRow(rown);
 	expand = row.insertCell(0);
 	topic = row.insertCell(1);
@@ -81,8 +83,10 @@ for (var i=0; i<(Object.keys(obj).length);i++)
 	ihc = row.insertCell(3);
 	rown++;
 	topic.innerHTML = (obj[i][Object.keys(obj[i])[0]]);
+	// The above is called in such a way because at some places the name is described as 'label' whereas at other places as 'rowLabel'. For the values, it does not matter.
 	ma.style.backgroundColor = color(obj[i].values[0].value);
 	ihc.style.backgroundColor = color(obj[i].values[1].value);
+	//Initial depth
 	childLevel = 0;
 	nthchild(obj,i,childLevel);
 
@@ -94,6 +98,7 @@ function nthchild(obj,i,childLevel)
 {
 	if ('children' in obj[i])
 	{	
+		//datatar is to get all id's to be put into data-target for collapse functioning.
 		var datatar = ""
 		for (var j=0; j<(Object.keys(obj[i].children).length);j++)
 		{
@@ -114,11 +119,11 @@ function nthchild(obj,i,childLevel)
 			ma = row.insertCell(2);
 			ihc = row.insertCell(3);
 			rown++;
-			var prop = Object.keys(obj[i].children[j])[0];
 			topic.innerHTML = (obj[i].children[j][Object.keys(obj[i].children[j])[0]]);
 			ma.style.backgroundColor = color(obj[i].children[j].values[0].value);
 			ihc.style.backgroundColor = color(obj[i].children[j].values[1].value);
 			row.setAttribute("class","collapse");
+			//setting id's fpr each child row for collapse functionality.
 			row.setAttribute("id", "c" + i + j + "");
 			
 			// topic.style.backgroundColor = childcolors[childLevel];
