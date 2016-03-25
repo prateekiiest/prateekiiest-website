@@ -1,1 +1,0 @@
-devkhan.github.io
