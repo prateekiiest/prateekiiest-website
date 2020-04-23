@@ -42,7 +42,14 @@
         <!-- <h3>AI Center Fellow <br> Microsoft Research India</h3> -->
         <p><span class="desig">AI Center Fellow</span> <br> <span class="location">Microsoft Research India</span></p>
         <hr>
-        <a class="icons" href="assets/sebastincv.pdf" target="_blank">
+        <a id="icon_cv"class="tag had" href="assets/sebastincv.pdf" target="_blank"><i class="had fas fa-file-alt"></i>&nbsp; cv</a>
+        <a id="icon_email" class="tag had" href="mailto:hi@sebast.in" target="_blank"><i class="fas fa-envelope"></i>&nbsp; email</a>
+        <a id="icon_github" class="tag had" href="https://github.com/sebastinsanty" target="_blank"><i class="had fab fa-github"></i>&nbsp; github</a>
+        <div style="height:10px"></div>
+        <a id="icon_twitter" class="tag had" href="https://twitter.com/sebastinsanty" target="_blank"> <i class="fab fa-twitter"></i>&nbsp; twitter</a>
+        <a id="icon_linkedin" class="tag had" href="https://www.linkedin.com/in/sebastinsanty/" target="_blank"><i class="fab fa-linkedin-in"></i>&nbsp; linkedin</a>
+        <a id="icon_scholar" class="tag had" href="https://scholar.google.com/citations?user=HsyMg08AAAAJ" target="_blank"><i class="fab fa-google"></i>&nbsp; scholar</a>
+        <!-- <a class="icons" href="assets/sebastincv.pdf" target="_blank">
           <i class="far fa-file-alt fa-lg"></i>
         </a>
         <a class="icons" href="mailto:hi@sebast.in" target="_blank">
@@ -59,7 +66,7 @@
         </a>
         <a class="icons" href="https://scholar.google.com/citations?user=HsyMg08AAAAJ" target="_blank">
           <i class="fas fa-graduation-cap fa-lg"></i>
-        </a>
+        </a> -->
         <!-- <p>
           <span class="subtitle">Email       </span>: <span class="subinfo"> <a href="mailto:hi@sebast.in" target="_blank">hi@sebast.in</a></span> <br>
           <span class="subtitle">CV          </span>: <span class="subinfo"> <a href="assets/sebastincv.pdf" target="_blank">/cv.pdf</a></span> <br>
@@ -255,6 +262,14 @@
       font-size: 90%;
       /* margin-right:2px; */
     }
+
+    .had {
+      margin-top: 2px;
+    }
+
+    .tag > i{
+      width: auto;
+    }
     .papertitle {
       font-weight: 600;
     }
@@ -328,6 +343,53 @@
       background-color: rgb(143, 0, 0);
       color: white;
       text-decoration: initial;
+    }
+
+    /* .tag:hover > i {
+      color: blue;
+      text-decoration: initial;
+    } */
+
+    #icon_cv > i{
+      color: #673AB7;
+    }
+    #icon_email > i{
+      color: #FF5722;
+    }
+    #icon_github > i{
+    color: black;
+    }
+
+    #icon_twitter > i{
+    color: #00acee;
+    }
+
+    #icon_linkedin > i{
+    color: #0e76a8;
+    }
+    #icon_scholar > i{
+    color: rgb(66, 134, 245);
+    }
+
+    #icon_cv:hover > i{
+    color: white;
+    }
+    #icon_email:hover > i{
+    color: white;
+    }
+    #icon_github:hover > i{
+    color: white;
+    }
+
+    #icon_twitter:hover > i{
+    color: white;
+    }
+
+    #icon_linkedin:hover > i{
+    color: white;
+    }
+    #icon_scholar:hover > i{
+    color: white;
     }
 
     .icons:hover {
