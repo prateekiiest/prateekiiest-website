@@ -32,12 +32,13 @@
   </head>
   <body>
     <!-- <h1>Hello, world!</h1> -->
-    <div class="container pt-5">
-        <div class="row pt-5">
+    <div class="container pt-5 allstuffp">
+        <div class="row pt-5 allstuff">
             <div class="col-md-4 pt-5">
                 <div class="fixed-posi">
-                <p class="name pb-5">Sebastin Santy</p>
-                <div class="pt-5"><a class="menulink" target="_blank" href="assets/sebastin_cv.pdf">curriculum vitae</a></div>
+                <p class="name">Sebastin Santy</p>
+                <img src="images/profile-pixel.png" class="profilepic pt-3 pb-2">
+                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/sebastin_cv.pdf">curriculum vitae</a></div>
                 <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=HsyMg08AAAAJ">google scholar</a></div>
                 <div class=""><a class="menulink" target="_blank" href="mailto:hi@sebast.in">email address</a></div>
                 <div class=""><a class="menulink" target="_blank" href="https://github.com/sebastinsanty">github profile</a></div>
@@ -310,6 +311,11 @@
           color: #111;
       }
 
+      .profilepic {
+      width:180px;
+      border-radius: 40%;
+      }
+
       @media (min-width: 768px) {
             .fixed-posi {
             /* width: 50%;
@@ -318,5 +324,28 @@
             position:fixed;
       }
       }
+
+      @media only screen and (max-width: 900px) {
+      .allstuff {
+          padding-top:0px !important;
+      }
+
+      .allstuffp {
+          padding-top:0px !important;
+      }
+
+      .profilepic {
+            width:110px;
+            border-radius: 40%;
+            padding-top:0px !important;
+            padding-bottom: 0px !important;
+      }
+
+      .menur {
+          padding-top:18px !important;
+      }
+
+      }
+      
   </style>
 </html>
