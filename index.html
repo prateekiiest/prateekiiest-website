@@ -81,13 +81,13 @@
                 <a class="menulink mr-1" target="_blank" href="https://scholar.google.com/citations?user=HsyMg08AAAAJ"><i class="ai ai-google-scholar-square ai-2x"></i></a> -->
             </div>
                 <!-- <i class="ai ai-google-scholar-square ai-3x"></i> -->
-                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/sebastin_cv.pdf"><i class="ai ai-cv" style="font-size: 1.2rem;"></i><span class="tagsep"></span>curriculum vitae</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=HsyMg08AAAAJ"><i class="ai ai-google-scholar" style="font-size: 1.2rem;"></i><span class="tagsep"></span>google scholar</a></div>
-                <div class=""><a class="menulink" target="_blank" href="mailto:hi@sebast.in"><i class="fas fa-envelope" style="font-size: 1rem;"></i><span class="tagsep"></span>email address</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://github.com/sebastinsanty"><i class="fab fa-github" style="font-size: 1rem;"></i><span class="tagsep"></span>github profile</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://www.microsoft.com/en-us/research/people/t-sesan/"><i class="fab fa-microsoft" style="font-size: 1rem;"></i><span class="tagsep"></span>microsoft</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/sebastinsanty/"><i class="fab fa-linkedin" style="font-size: 1rem;"></i><span class="tagsep"></span>linkedin</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/sebastinsanty"><i class="fab fa-twitter" style="font-size: 1rem;"></i><span class="tagsep"></span>twitter</a></div>
+                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/sebastin_cv.pdf"><i class="ai ai-cv headtag" style="font-size: 1.2rem;"></i><span class="tagsep"></span>curriculum vitae</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=HsyMg08AAAAJ"><i class="ai ai-google-scholar headtag" style="font-size: 1.2rem;"></i><span class="tagsep"></span>google scholar</a></div>
+                <div class=""><a class="menulink" target="_blank" href="mailto:hi@sebast.in"><i class="fas fa-envelope headtag" style="font-size: 1rem;"></i><span class="tagsep"></span>email address</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://github.com/sebastinsanty"><i class="fab fa-github headtag" style="font-size: 1rem;"></i><span class="tagsep"></span>github profile</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://www.microsoft.com/en-us/research/people/t-sesan/"><i class="fab fa-microsoft headtag" style="font-size: 1rem;"></i><span class="tagsep"></span>microsoft</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/sebastinsanty/"><i class="fab fa-linkedin headtag" style="font-size: 1rem;"></i><span class="tagsep"></span>linkedin</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/sebastinsanty"><i class="fab fa-twitter headtag" style="font-size: 1rem;"></i><span class="tagsep"></span>twitter</a></div>
                 
 
                 
@@ -96,7 +96,7 @@
                 <!-- <div class=""><a class="menulink" target="_blank" href="https://bdkj.github.io/">bharat data ki jai</a></div> -->
                 </div>
             </div>
-            <div class="col-md-8 pt-5 about">
+            <div class="col-md-8 pt-5 about text-justify">
                  I am a pre-doctoral <a class="in-text" href="https://www.microsoft.com/en-us/research/group/scai/"
                      target="_blank">AI Center</a> Fellow at <a class="in-text"
                      href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/"
@@ -350,7 +350,7 @@
                     </div> -->
                     <div class="col-lg-12">
                  <div class="talk my-2 pl-2">
-                     <span class="papertitle"><a class="tag" href="https://dl.acm.org/doi/10.1145/3154273.3154316" target="_blank">BITS Darshini: A Modular, Concurrent Protocol Analyzer
+                     <span class="papertitle"><a href="https://dl.acm.org/doi/10.1145/3154273.3154316" target="_blank">BITS Darshini: A Modular, Concurrent Protocol Analyzer
                          Workbench</a></span><br>
                      Prasad Talasila, Mihir Kakrambe, <span class="thisauthor">Sebastin Santy</span>, Anurag Rai, Neena Goveas, Bharat M
                      Deshpande<br>
@@ -386,7 +386,7 @@
                  </div>
                  <div class="pb-1">
                  <div class="talk my-2 pl-2">
-                     <span class="papertitle"><a class="tag" href="https://www.youtube.com/watch?v=eMtuzjn_Xks" target="_blank">Repeatable Data Setup for Repeatable Science</a></span><br>
+                     <span class="papertitle"><a href="https://www.youtube.com/watch?v=eMtuzjn_Xks" target="_blank">Repeatable Data Setup for Repeatable Science</a></span><br>
                      Talked about DataDepsGenerators.jl and Reproducible AI.<br>
                      <div class="d-flex">
                      <span class="conf">PyData 2018, 11 Times Square, New York City, United States</span><br>
@@ -555,7 +555,15 @@
       }
       .tag {
           padding-right:2px;
+          color: #333;
       }
+      /* .headtag {
+          color: #00369f;
+      }
+
+      .headtag:hover {
+          color: #00369f;
+      } */
 
       .confshort {
           font-weight: 300;
@@ -578,10 +586,12 @@
       .menulink {
           color: #333;
           font-size: 1.1rem;
+          /* text-decoration: underline;
+          text-decoration-color: #00369f; */
       }
 
       .menulink:hover {
-          color: #111;
+          color: #00369f;
       }
 
       .profilepic {
