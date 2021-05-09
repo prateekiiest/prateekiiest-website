@@ -111,7 +111,7 @@
                      href="https://www.microsoft.com/en-us/research/people/kalikab/" target="_blank">Kalika Bali</a>,
                  <a class="in-text" href="https://www.microsoft.com/en-us/research/people/monojitc/"
                      target="_blank">Monojit Choudhury</a> and <a class="in-text" href="https://www.microsoft.com/en-us/research/people/taganu/"
-                     target="_blank">Tanuja Ganu</a>. My research interests broadly lie in the intersection of <u>NLP</u> <span style="font-size: small;">(Natural Language Processing)</span> and <u>HCI</u> <span style="font-size: small;">(Human Computer Interaction)</span> with an emphasis on their <u>social implications</u>. 
+                     target="_blank">Tanuja Ganu</a>. My research interests broadly lie in the intersection of <u id="nlptag">NLP</u> <span id="nlpfull" style="font-size: small; display:none;">(Natural Language Processing)</span> and <u id="hcitag">HCI</u> <span id="hcifull" style="font-size: small; display:none;">(Human Computer Interaction)</span> with an emphasis on their <u>social implications</u>. 
                      <!-- Within this, I am particularly excited about the following themes:<br>
                      <ol class="px-3 pt-2 pb-1">
                      <li><span style="text-decoration:underline; text-decoration-style: dotted;">Human-centered NLP</span> - How can we benefit froom human-centered approaches to NLP?</li>
@@ -160,19 +160,22 @@
                     </div> -->
                 <div class="col-lg-12">
                  <div class="talk my-2 pl-2">
-                     <span class="papertitle"><a href="https://microsoft.github.io/linguisticdiversity/" target="_blank">Use of Formal Ethical Reviews in NLP Literature: Historical Trends and Current Practices</a></span><br>
+                     <span class="papertitle"><a href="#">Use of Formal Ethical Reviews in NLP Literature: Historical Trends and Current Practices</a></span><br>
                     <span class="thisauthor">Sebastin Santy</span>, Anku Rani, Monojit Choudhury
                      <div class="d-flex">
                      <span class="conf"><b>Findings of ACL 2021</b>
-                        <!-- Annual Conference of the Association for ComputationalLinguistics -->
+                        <!-- </div>
+                    <div class="d-flex">
+                    <span class="conf"><b>NLP4PositiveImpact@ACL 2021</b> -->
+                        <!-- Annual Conference of the Association for Computational Linguistics -->
                         </span>
-                    <span class="ml-auto">
-                     <!-- <a class="tag" href="https://microsoft.github.io/linguisticdiversity/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Website"><i class="fas fa-globe-americas"></i></a><span class="tagsep"></span>
+                    <!-- <span class="ml-auto">
+                     <a class="tag" href="https://microsoft.github.io/linguisticdiversity/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Website"><i class="fas fa-globe-americas"></i></a><span class="tagsep"></span>
                      <a class="tag" href="https://www.youtube.com/watch?v=UJwJd0mJ1SQ" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Video"><i class="fas fa-video"></i></a><span class="tagsep"></span>
                     <a class="tag" href="https://www.aclweb.org/anthology/2020.acl-main.560.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Paper PDF"><i class="far fa-file-pdf"></i></a><span class="tagsep"></span>
                      <a class="tag" href="https://www.aclweb.org/anthology/2020.acl-main.560/" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Paper Abstract"><i class="far fa-file-alt"></i></a><span class="tagsep"></span>
-                     <a class="tag" href="cites/acl2020.bib" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Cite this work"><i class="fas fa-quote-right"></i></a> -->
-                     </span>
+                     <a class="tag" href="cites/acl2020.bib" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Cite this work"><i class="fas fa-quote-right"></i></a>
+                     </span> -->
                      </div>
                     </div>
                  </div>
@@ -763,6 +766,10 @@
           font-size: 0.9rem;
       }
       
+      #nlptag, #hcitag {
+          cursor: pointer;
+      }
+      
       [aria-expanded="false"] > .expanded,
       [aria-expanded="true"] > .collapsed {
         display: none;
@@ -830,5 +837,17 @@
                 }
             });
         });
+
+        $('#nlptag').click(function () {
+            $('#nlpfull').fadeIn();
+            $(this).css('cursor','default');
+        })
+
+        $('#hcitag').click(function () {
+            $('#hcifull').fadeIn();
+            $(this).css('cursor','default');
+        })
+
+
   </script>
 </html>
